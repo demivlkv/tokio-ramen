@@ -14,4 +14,4 @@ const Menu = () => (
 
 export const Head = () => <Seo title="Page two" />
 
-export default Menu
+export default Menu;

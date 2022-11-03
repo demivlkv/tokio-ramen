@@ -14,4 +14,4 @@ const Contact = () => (
 
 export const Head = () => <Seo title="Page two" />
 
-export default Contact
+export default Contact;
