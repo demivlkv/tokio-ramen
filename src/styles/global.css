@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700&display=swap');
+
+@layer base {
+    body {
+        @apply bg-[#f4f4f4];
+        @apply font-['Jost'];
+        @apply text-[#222];
+        @apply text-base;
+        @apply leading-loose;
+    }
+}
