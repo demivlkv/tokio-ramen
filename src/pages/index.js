@@ -1,12 +1,14 @@
-import * as React from "react"
+import * as React from 'react';
 import '../styles/global.css';
 
+// import components
 import Header from '../components/header';
+import Hero from '../components/hero';
 
 const IndexPage = () => (
   <div>
     <Header />
-    <p className="text-slate-600">Home</p>
+    <Hero />
   </div>
 );
 

@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 const Header = () => (
     <header>
-        <div className="mb-[70px]">
+        <div>
             <div className="fixed top-0 z-50 w-full flex justify-between items-center p-4 bg-[#ddd]">
                 <div className="Logo">
                     <Link to="/">TOKIO RAMEN</Link>
