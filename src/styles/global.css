@@ -9,7 +9,24 @@
         @apply bg-[#f4f4f4];
         @apply font-['Jost'];
         @apply text-[#222];
-        @apply text-base;
+        @apply text-lg;
         @apply leading-loose;
+    }
+
+    .navigation a {
+        @apply font-medium;
+        @apply uppercase;
+        @apply transition-all ease-in;
+        @apply duration-300;
+    }
+
+    .navigation a:hover {
+        @apply text-[#fe4039];
+    }
+
+    .hero {
+        @apply relative;
+        @apply w-screen;
+        @apply w-screen;
     }
 }
