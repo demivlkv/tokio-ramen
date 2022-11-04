@@ -6,7 +6,7 @@
 
 @layer base {
     body {
-        @apply bg-[#f4f4f4];
+        @apply bg-[#fdfdfd];
         @apply font-['Jost'];
         @apply text-[#222];
         @apply text-lg;
@@ -24,9 +24,9 @@
         @apply text-[#fe4039];
     }
 
-    .hero {
+    /* .hero {
         @apply relative;
         @apply w-screen;
         @apply w-screen;
-    }
+    } */
 }
