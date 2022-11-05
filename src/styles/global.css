@@ -23,10 +23,4 @@
     .navigation a:hover {
         @apply text-[#fe4039];
     }
-
-    /* .hero {
-        @apply relative;
-        @apply w-screen;
-        @apply w-screen;
-    } */
 }
