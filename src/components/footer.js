@@ -12,7 +12,7 @@ const Footer = () => (
                     <p>(561) 509-8131</p>
                 </div>
                 <div className="text-base">
-                    <p>© 2022 T<span className="text-[#fe4039]">o</span>kio Ramen. All rights reserved.</p>
+                    <p>© {new Date().getFullYear()} &middot; T<span className="text-[#fe4039]">o</span>kio Ramen. All rights reserved.</p>
                 </div>
             </div>
         </div>
