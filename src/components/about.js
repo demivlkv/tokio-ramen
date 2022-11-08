@@ -1,8 +1,7 @@
 import * as React from 'react';
-import Layout from '../components/layout';
 
 const About = () => (
-  <Layout pageTitle="Our History">
+  <>
     <div className="w-full my-16">
       <div className="max-w-screen-md mx-auto px-8 flex flex-col justify-center h-full">
         <h2 className="pb-4 font-medium text-2xl text-[#fe4039] uppercase tracking-wide">About Us</h2>
@@ -20,7 +19,7 @@ const About = () => (
         </p>
       </div>
     </div>
-  </Layout>
+  </>
 )
 
 export default About;

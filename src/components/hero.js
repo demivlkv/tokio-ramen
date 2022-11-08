@@ -11,9 +11,9 @@ const Hero = () => {
             style={{ backgroundImage: `url(${bgImg})` }}
         >
           <div className="h-screen flex flex-col justify-center items-center">
-            <StaticImage src="../images/tokio-main.png" alt="Tokio Ramen Logo" className="z-[8] max-w-screen-md" />
-            <div className="z-[9] pt-12 text-2xl md:text-3xl text-[#222] font-normal uppercase tracking-[.2em] drop-shadow">
-              Ramen done right.
+            <StaticImage src="../images/tokio-main.png" alt="Tokio Ramen Logo" className="z-[5] max-w-screen-md" />
+            <div className="z-[5] pt-12 text-2xl md:text-3xl text-[#222] font-normal uppercase tracking-[.2em] drop-shadow">
+              Ramen done right
             </div>
           </div>
         </div>

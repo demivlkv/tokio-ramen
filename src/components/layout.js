@@ -4,6 +4,9 @@ import '../styles/global.css';
 // import components
 import Header from '../components/header';
 import Hero from './hero';
+import About from './about';
+import Menu from './menu';
+import Info from './info';
 import Footer from './footer';
 
 const Layout = ({ pageTitle, children }) => {
@@ -13,6 +16,9 @@ const Layout = ({ pageTitle, children }) => {
       <Header />
       <Hero />
         <main>{children}</main>
+      <About />
+      <Menu />
+      <Info />
       <Footer />
     </>
   );
