@@ -8,9 +8,10 @@
     body {
         @apply bg-[#fdfdfd];
         @apply font-['Jost'];
+        @apply font-light;
         @apply text-[#222];
-        @apply text-lg;
         @apply leading-loose;
+        @apply cursor-default;
     }
 
     .navigation a {
