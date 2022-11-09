@@ -24,4 +24,9 @@
     .navigation a:hover {
         @apply text-[#fe4039];
     }
+
+    button {
+        @apply transition-all ease-in;
+        @apply duration-300;
+    }
 }

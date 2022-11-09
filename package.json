@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "demivlkv",
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
     "gatsby": "^4.24.6",
     "gatsby-plugin-image": "^2.24.0",
     "gatsby-plugin-manifest": "^4.24.0",
