@@ -4,8 +4,11 @@ import { StaticImage } from 'gatsby-plugin-image';
 const About = () => (
   <>
     <div className="w-full h-screen">
+
       <StaticImage src="../images/top-border.png" alt="" className="w-full" />
+
       <div className="bg-[#222] py-10">
+
         <h2 className="pb-8 font-normal text-2xl text-[#fe4039] text-center uppercase tracking-widest">Our History</h2>
         <div className="max-w-screen-lg w-full grid px-4 sm:grid-cols-2 gap-8 mx-auto text-white">
           <div className="flex justify-center items-center">
@@ -20,22 +23,25 @@ const About = () => (
             </p>
           </div>
         </div>
+
         <div className="max-w-screen-md w-full mx-auto text-white px-4">
-          <p className="py-2">
+          <p className="py-4">
             We are firm believers in acknowledging and giving credit where it's due. With that, we'd like to let our utmost gratitude be known to those who've helped us along the way:
           </p>
-          <p className="pt-2 text-center">
+          <p className="text-center">
             City of Boynton Beach (with distinguished praise for the CRA!)
           </p>
-          <p className="pt-2 text-center">
+          <p className="text-center">
             Catoe & Son Plumbing | Flameguard Fire Equipment | LifeSafety Management
           </p>
-          <p className="pt-2 text-center">
+          <p className="text-center">
             Chip Brown of AMJ  |  Challenger Operations Inc
           </p>
         </div>
       </div>
-      <StaticImage src="../images/bottom-border.png" alt="" className="w-full" />
+
+      <StaticImage src="../images/bottom-border.png" alt="" className="w-full z-10" />
+
     </div>
   </>
 )
