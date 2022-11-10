@@ -13,7 +13,7 @@ const Info = () => (
   <>
     <div className="w-full h-screen">
 
-      <StaticImage src="../images/top-border-2.png" alt="" className="w-full" />
+      <StaticImage src="../../images/info/top-border.png" alt="" className="w-full" />
 
       <div className="bg-[#222] py-12">
 
@@ -28,7 +28,7 @@ const Info = () => (
         <div className="max-w-screen-lg w-full grid sm:grid-cols-2 gap-4 mx-auto px-4 text-white">
 
           <div className="flex justify-center items-center">
-            <StaticImage src="../images/tokio-map.png" alt="Tokio Ramen Location" className="mr-4 drop-shadow-md" />
+            <StaticImage src="../../images/info/tokio-map.png" alt="Tokio Ramen Location" className="mr-4 drop-shadow-md" />
           </div>
           {/* CONTACT INFO */}
           <div className="w-full grid grid-cols-2 gap-2">
@@ -110,7 +110,7 @@ const Info = () => (
 
       </div>
 
-      <StaticImage src="../images/btm-border-2.png" alt="" className="w-full z-10" />
+      <StaticImage src="../../images/info/btm-border.png" alt="" className="w-full z-10" />
 
     </div>
   </>

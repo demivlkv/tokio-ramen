@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { validateEmail } from '../utils/helpers';
+import { validateEmail } from '../../utils/helpers';
 import { FiChevronRight } from '@react-icons/all-files/fi/FiChevronRight';
 
 const Contact = () => {

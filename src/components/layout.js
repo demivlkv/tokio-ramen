@@ -2,12 +2,12 @@ import * as React from 'react';
 import '../styles/global.css';
 
 // import components
-import Header from '../components/header';
-import Hero from './hero';
-import About from './about';
-import Menu from './menu';
-import Info from './info';
-import Contact from './contact';
+import Header from './header';
+import Hero from './Hero';
+import About from './About';
+import Menu from './Menu';
+import Info from './Info';
+import Contact from './Contact';
 import Footer from './footer';
 
 const Layout = ({ pageTitle, children }) => {
