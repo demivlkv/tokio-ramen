@@ -1,9 +1,11 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 
 // import react icons
 import { FiMapPin } from '@react-icons/all-files/fi/FiMapPin';
 import { FiPhone } from '@react-icons/all-files/fi/FiPhone';
+import { FiClock } from '@react-icons/all-files/fi/FiClock';
 import { FiInstagram } from '@react-icons/all-files/fi/FiInstagram';
 import { FiFacebook } from '@react-icons/all-files/fi/FiFacebook';
 
@@ -11,25 +13,31 @@ const Info = () => (
   <>
     <div className="w-full h-screen">
       <div className="bg-[#222] py-20">
+
         <h1 className="font-normal text-2xl text-[#fe4039] text-center uppercase tracking-widest">
           Information
         </h1>
+        <div className="text-white text-center my-8">
+          <p className="italic">
+            Closed MONDAYS, select holidays and during planned closures.<br />
+            Free covered garage parking available.
+          </p>
+        </div>
 
-        <div className="max-w-screen-lg w-full grid sm:grid-cols-2 gap-8 mx-auto mt-8 px-4 text-white">
+        <div className="max-w-screen-lg w-full grid sm:grid-cols-2 gap-4 mx-auto px-4 text-white">
 
           <div className="flex justify-center items-center">
-            {/* <StaticImage src="../images/our-history.png" alt="Tokio Ramen Owners" className="drop-shadow-md" /> */}
+            <StaticImage src="../images/tokio-map.png" alt="Tokio Ramen Location" className="mr-4 drop-shadow-md" />
           </div>
-
           {/* CONTACT INFO */}
-          <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-2">
-
+          <div className="w-full grid grid-cols-2 gap-2">
             <div className="inline-flex self-start items-center">
               <FiMapPin style={{ color: '#fe4039' }} size={20} className="mr-3" />
               <p className="font-medium uppercase">Location :</p>
             </div>
             <div className="inline-flex">
-              <p className="">One Boynton Plaza<br />
+              <p>
+                One Boynton Plaza<br />
                 307 E Woolbright Rd<br />
                 Boynton Beach, FL 33435
               </p>
@@ -41,7 +49,48 @@ const Info = () => (
             <div className="inline-flex">
               <p>(561) 509-8131</p>
             </div>
-
+            {/* HOURS OF OPERATION */}
+            <div className="inline-flex self-start items-center">
+              <FiClock style={{ color: '#fe4039' }} size={20} className="mr-3" />
+              <p className="font-medium uppercase">Hours of Operation :</p>
+            </div>
+            <div></div>
+            <div className="inline-flex justify-end items-center pr-4">
+              <p className="font-medium uppercase">Sun</p>
+            </div>
+            <div className="flex">
+              <p>12 pm to 7 pm</p>
+            </div>
+            <div className="inline-flex justify-end items-center pr-4">
+              <p className="font-medium uppercase">Mon</p>
+            </div>
+            <div className="flex">
+              <p>CLOSED</p>
+            </div>
+            <div className="inline-flex justify-end items-center pr-4">
+              <p className="font-medium uppercase">Tues & Thurs</p>
+            </div>
+            <div className="flex">
+              <p>12 pm to 10 pm</p>
+            </div>
+            <div className="inline-flex justify-end items-center pr-4">
+              <p className="font-medium uppercase">Wed</p>
+            </div>
+            <div className="flex">
+              <p>12 pm to 10 pm</p>
+            </div>
+            <div className="inline-flex justify-end items-center pr-4">
+              <p className="font-medium uppercase">Fri</p>
+            </div>
+            <div className="flex">
+              <p>12 pm to 10 pm</p>
+            </div>
+            <div className="inline-flex justify-end items-center pr-4">
+              <p className="font-medium uppercase">Sat</p>
+            </div>
+            <div className="flex">
+              <p>12 pm to 10 pm</p>
+            </div>
           </div>
         </div>
         
@@ -57,10 +106,9 @@ const Info = () => (
             </button>
           </Link>
         </div>
-
+        
       </div>
     </div>
   </>
 );
-
 export default Info;

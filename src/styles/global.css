@@ -13,20 +13,19 @@
         @apply leading-loose;
         @apply cursor-default;
     }
-
     .navigation a {
         @apply font-medium;
         @apply uppercase;
         @apply transition-all ease-in;
         @apply duration-300;
     }
-
     .navigation a:hover {
         @apply text-[#fe4039];
+        @apply cursor-pointer;
     }
-
     button {
         @apply transition-all ease-in;
         @apply duration-300;
+        @apply cursor-pointer;
     }
 }
