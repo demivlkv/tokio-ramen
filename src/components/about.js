@@ -5,11 +5,11 @@ const About = () => (
   <>
     <div className="w-full h-screen">
 
-      <StaticImage src="../images/top-border.png" alt="" className="w-full" />
+      <StaticImage src="../images/top-border-1.png" alt="" className="w-full" />
 
       <div className="bg-[#222] py-10">
 
-        <h2 className="pb-8 font-normal text-2xl text-[#fe4039] text-center uppercase tracking-widest">Our History</h2>
+        <h2>Our History</h2>
         <div className="max-w-screen-lg w-full grid px-4 sm:grid-cols-2 gap-8 mx-auto text-white">
           <div className="flex justify-center items-center">
             <StaticImage src="../images/our-history.png" alt="Tokio Ramen Owners" className="drop-shadow-md" />
@@ -40,7 +40,7 @@ const About = () => (
         </div>
       </div>
 
-      <StaticImage src="../images/bottom-border.png" alt="" className="w-full z-10" />
+      <StaticImage src="../images/btm-border-1.png" alt="" className="w-full z-10" />
 
     </div>
   </>

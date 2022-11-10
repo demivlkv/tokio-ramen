@@ -7,6 +7,7 @@ import Hero from './hero';
 import About from './about';
 import Menu from './menu';
 import Info from './info';
+import Contact from './contact';
 import Footer from './footer';
 
 const Layout = ({ pageTitle, children }) => {
@@ -19,6 +20,7 @@ const Layout = ({ pageTitle, children }) => {
       <About />
       <Menu />
       <Info />
+      <Contact />
       <Footer />
     </>
   );

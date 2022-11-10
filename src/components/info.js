@@ -12,12 +12,13 @@ import { FiFacebook } from '@react-icons/all-files/fi/FiFacebook';
 const Info = () => (
   <>
     <div className="w-full h-screen">
-      <div className="bg-[#222] py-20">
 
-        <h1 className="font-normal text-2xl text-[#fe4039] text-center uppercase tracking-widest">
-          Information
-        </h1>
-        <div className="text-white text-center my-8">
+      <StaticImage src="../images/top-border-2.png" alt="" className="w-full" />
+
+      <div className="bg-[#222] py-12">
+
+        <h2>Information</h2>
+        <div className="text-white text-center mb-8">
           <p className="italic">
             Closed MONDAYS, select holidays and during planned closures.<br />
             Free covered garage parking available.
@@ -106,8 +107,11 @@ const Info = () => (
             </button>
           </Link>
         </div>
-        
+
       </div>
+
+      <StaticImage src="../images/btm-border-2.png" alt="" className="w-full z-10" />
+
     </div>
   </>
 );

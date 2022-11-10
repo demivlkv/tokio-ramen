@@ -26,6 +26,16 @@
         @apply cursor-pointer;
     }
 
+    h2 {
+        @apply pb-8;
+        @apply font-medium;
+        @apply text-[#fe4039];
+        @apply text-2xl;
+        @apply text-center;
+        @apply uppercase;
+        @apply tracking-widest;
+    }
+
     button {
         @apply transition-all ease-in;
         @apply duration-300;
