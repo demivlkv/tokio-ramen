@@ -1,5 +1,5 @@
 import * as React from 'react';
-import menus from './data';
+import menus from './data.json';
 
 const MenuItem = ({ name, description, price }) => (
   <div className="w-full flex justify-between">
@@ -44,7 +44,7 @@ const FullMenu = ({ name, sections }) => (
 const Menu = () => (
   <>
     <div className="w-full h-screen">
-      <div className="h-full flex flex-col justify-center items-center">
+      <div className="h-full overflow-auto flex flex-col justify-center items-center">
 
         <h2>Menu</h2>
         {menus.map(menu => (

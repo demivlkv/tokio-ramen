@@ -1,7 +1,7 @@
 [
     {
         "name": "Menu",
-        "section": [
+        "sections": [
             {
                 "name": "Beverages",
                 "imageAlt": "Beverages",
@@ -200,7 +200,7 @@
                     },
                     {
                         "name": "Extra Noodles (Kaedama)",
-                        "description": "2.5",
+                        "description": "",
                         "price": 2.5
                     },
                     {
@@ -264,7 +264,7 @@
                     },
                     {
                         "name": "Katsu-don",
-                        "description": "Rice bowl topped with pork cutlets & onions, simmered in eggs and a savory sauce.",
+                        "description": "Rice bowl topped with pork cutlets & onions, simmered in eggs and a savory sauce",
                         "price": 11.5
                     }
                 ]
