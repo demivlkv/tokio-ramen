@@ -1,5 +1,5 @@
 import * as React from 'react';
-import menus from './data.json';
+import useMenus from '../../hooks/useMenus';
 
 const MenuItem = ({ name, description, price }) => (
   <div className="w-full flex justify-between">
@@ -34,26 +34,30 @@ const FullMenu = ({ name, sections }) => (
         key={section.name}
         name={section.name}
         items={section.items}
-        image={section.image}
+        image={section.image.publicUrl}
         imageAlt={section.imageAlt}
       />
     ))}
   </div>
 );
 
-const Menu = () => (
-  <>
-    <div className="w-full h-screen">
-      <div className="h-full overflow-auto flex flex-col justify-center items-center">
+const Menu = () => {
+  const menus = useMenus();
 
-        <h2>Menu</h2>
-        {menus.map(menu => (
-          <FullMenu key={menu.name} sections={menu.sections} />
-        ))}
+  return (
+    <>
+      <div className="w-full h-screen">
+        <div className="h-full overflow-auto flex flex-col justify-center items-center">
 
+          <h2>Menu</h2>
+          {menus.map(menu => (
+            <FullMenu key={menu.name} sections={menu.sections} />
+          ))}
+
+        </div>
       </div>
-    </div>
-  </>
-);
+    </>
+  )
+};
 
 export default Menu;
