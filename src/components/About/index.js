@@ -3,11 +3,9 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 const About = () => (
   <>
-    <div className="w-full h-screen">
-
+    <div className="w-full md:h-screen">
       <StaticImage src="../../images/about/top-border.png" alt="" className="w-full" />
-
-      <div className="bg-[#222] py-10">
+      <div className="bg-[#222] py-4 md:py-0">
 
         <h2>Our History</h2>
         <div className="max-w-screen-lg w-full grid px-4 sm:grid-cols-2 gap-8 mx-auto text-white">
@@ -38,10 +36,9 @@ const About = () => (
             Chip Brown of AMJ  |  Challenger Operations Inc
           </p>
         </div>
+
       </div>
-
-      <StaticImage src="../../images/about/btm-border.png" alt="" className="w-full z-10" />
-
+      <StaticImage src="../../images/about/btm-border.png" alt="" className="w-full bg-[#222]" />
     </div>
   </>
 )

@@ -44,4 +44,11 @@
     button:hover {
         @apply cursor-pointer;
     }
+
+    .about {
+        @apply bg-cover;
+        @apply bg-top;
+        @apply bg-no-repeat;
+        @apply pt-[8rem];
+    }
 }

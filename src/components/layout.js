@@ -5,6 +5,7 @@ import '../styles/global.css';
 import Header from './header';
 import Hero from './Hero';
 import About from './About';
+import Break from './break';
 import Menu from './Menu';
 import Info from './Info';
 import Contact from './Contact';
@@ -18,7 +19,9 @@ const Layout = ({ pageTitle, children }) => {
       <Hero />
         <main>{children}</main>
       <About />
+      <Break />
       <Menu />
+      <Break />
       <Info />
       <Contact />
       <Footer />

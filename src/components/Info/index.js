@@ -11,11 +11,9 @@ import { FiFacebook } from '@react-icons/all-files/fi/FiFacebook';
 
 const Info = () => (
   <>
-    <div className="w-full h-screen">
-
+    <div className="w-full md:h-screen">
       <StaticImage src="../../images/info/top-border.png" alt="" className="w-full" />
-
-      <div className="bg-[#222] py-12">
+      <div className="bg-[#222] py-4 md:py-0">
 
         <h2>Information</h2>
         <div className="text-white text-center mb-8">
@@ -109,9 +107,7 @@ const Info = () => (
         </div>
 
       </div>
-
-      <StaticImage src="../../images/info/btm-border.png" alt="" className="w-full z-10" />
-
+      <StaticImage src="../../images/info/btm-border.png" alt="" className="w-full" />
     </div>
   </>
 );
