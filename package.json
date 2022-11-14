@@ -1,7 +1,7 @@
 {
   "name": "tokio-ramen",
   "private": true,
-  "description": "Tokio Ramen's official website",
+  "description": "Tokio Ramen Official Website",
   "version": "0.1.0",
   "author": "demivlkv",
   "dependencies": {
@@ -16,8 +16,7 @@
     "gatsby-transformer-sharp": "^5.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-icons": "^4.6.0"
+    "react-dom": "^18.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

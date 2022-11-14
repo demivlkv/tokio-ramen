@@ -8,11 +8,14 @@ export default () => {
                 nodes {
                     name
                     sections {
+                        name
                         imageAlt
                         items {
                             name
                             description
                             price
+                            spicy
+                            categoryList
                         }
                         image {
                             publicUrl
