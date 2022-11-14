@@ -10,7 +10,7 @@ import { FiInstagram } from '@react-icons/all-files/fi/FiInstagram';
 import { FiFacebook } from '@react-icons/all-files/fi/FiFacebook';
 
 const Info = () => (
-  <>
+  <section id="info">
     <div className="w-full md:h-screen">
       <StaticImage src="../../images/info/top-border.png" alt="" className="w-full" />
       <div className="bg-[#222] py-4 md:py-0">
@@ -109,6 +109,6 @@ const Info = () => (
       </div>
       <StaticImage src="../../images/info/btm-border.png" alt="" className="w-full" />
     </div>
-  </>
+  </section>
 );
 export default Info;

@@ -34,7 +34,7 @@ const Contact = () => {
     };
 
     return (
-        <>
+        <section id="contact">
             <div className="w-full h-screen">
                 <div className="h-full flex flex-col justify-center items-center">
 
@@ -70,7 +70,7 @@ const Contact = () => {
 
                 </div>
             </div>
-        </>
+        </section>
     );
 };
 

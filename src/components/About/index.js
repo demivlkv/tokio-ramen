@@ -2,7 +2,7 @@ import * as React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const About = () => (
-  <>
+  <section id="about">
     <div className="w-full md:h-screen">
       <StaticImage src="../../images/about/top-border.png" alt="" className="w-full" />
       <div className="bg-[#222] py-4 md:py-0">
@@ -40,7 +40,7 @@ const About = () => (
       </div>
       <StaticImage src="../../images/about/btm-border.png" alt="" className="w-full bg-[#222]" />
     </div>
-  </>
+  </section>
 )
 
 export default About;

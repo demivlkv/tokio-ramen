@@ -52,7 +52,7 @@ const Menu = () => {
   const menus = useMenus();
 
   return (
-    <>
+    <section id="menu">
       <div className="w-full h-full">
         <div className="h-full overflow-y-scroll flex flex-col justify-center items-center">
 
@@ -65,7 +65,7 @@ const Menu = () => {
 
         </div>
       </div>
-    </>
+    </section>
   )
 };
 
