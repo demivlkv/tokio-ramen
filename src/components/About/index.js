@@ -4,7 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 const About = () => (
   <section id="about">
     <div className="w-full md:h-screen">
-      <StaticImage src="../../images/about/top-border.png" alt="" className="w-full" />
+      <StaticImage src="../../images/about/top-border.png" alt="" className="w-full bg-[#222]" />
       <div className="bg-[#222] py-4 md:py-0">
 
         <h2>Our History</h2>
@@ -38,7 +38,7 @@ const About = () => (
         </div>
 
       </div>
-      <StaticImage src="../../images/about/btm-border.png" alt="" className="w-full bg-[#222]" />
+      <StaticImage src="../../images/about/btm-border.png" alt="" className="w-full" />
     </div>
   </section>
 )

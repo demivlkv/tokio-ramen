@@ -1,23 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ImFire } from '@react-icons/all-files/Im/ImFire';
 import useMenus from '../../hooks/useMenus';
 
 const MenuItem = ({ name, description, price, spicy, categoryList }) => (
-  <div className="mx-auto grid col-auto gap-4">
-  <div className="flex justify-between">
-    <div>
-      <h4 className="text-xl font-medium flex-inline items-center">
-        {name} {spicy === true ? <div className="mx-2 w-[25px] h-[25px] inline-flex justify-center items-center rounded-full bg-[#fe4039] text-white"><ImFire size={16} /></div> : ""}
-      </h4>
-      <p className="py-4">{description}</p>
+  <section>
+    <div className="mx-auto grid col-auto gap-4">
+      <div className="flex justify-between">
+        <div>
+          <h4 className="text-xl font-medium flex-inline items-center">
+            {name} {spicy === true ? <div className="mx-2 w-[25px] h-[25px] inline-flex justify-center items-center rounded-full bg-[#fe4039] text-white"><ImFire size={16} /></div> : ""}
+          </h4>
+          <p className="py-4">{description}</p>
+        </div>
+        <p className="font-medium">{price}</p>
+      </div>
     </div>
-    <p className="font-medium">{price}</p>
-  </div>
-  </div>
+  </section>
 );
 
-const MenuSection = ({ name, items, image, imageAlt }) => (
-  <div className="mb-8">
+const MenuSection = ({ name, items, image, imageAlt }) => {
+  const sections = ['beverages', 'appetizers', 'ramen', 'ramen toppings', 'udon & soba', 'rice']
+  const [currentSection, setCurrentSection] = useState('beverages');
+
+  return (
+  <>
+    <ul className="tracking-widest">
+    {sections.map((section) => (
+      <li className={
+        currentSection.name === name ? 'text-lg text-red-700 font-semibold uppercase' : 'text-blue-700'
+      } key={name} >
+        <span onClick={() => setCurrentSection(section)} className={
+          currentSection === section ? 'mx-2 active font-semibold' : 'mx-2 font-medium hover:border-b-4 hover:border-[#5e7089] transition-all hover:text-white'
+        }>{section}</span>
+        </li>
+        ))}
+      </ul>
+
+      {/* <div>
     <h3 className="text-lg text-red-700 font-semibold uppercase">{name}</h3>
     <img src={image} alt={imageAlt} width={500} />
     {items.map(item => (
@@ -29,9 +48,11 @@ const MenuSection = ({ name, items, image, imageAlt }) => (
         spicy={item.spicy}
         categoryList={item.categoryList}
       />
-    ))}
-  </div>
-);
+    ))};
+  </div> */}
+      </>
+    )
+  };
 
 const FullMenu = ({ name, sections }) => (
   <div className="mb-8">

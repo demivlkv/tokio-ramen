@@ -17,6 +17,8 @@
     .navigation a {
         @apply font-medium;
         @apply uppercase;
+        @apply text-sm;
+        @apply md:text-lg;
         @apply transition-all ease-in;
         @apply duration-300;
     }
