@@ -12,18 +12,18 @@ const Footer = () => (
                 <StaticImage src="../images/footer/logo.png" alt="" className="w-[40px]" />
             </div>
 
-            <div className="font-normal text-base tracking-wider">
+            <div className="text-sm md:text-base font-normal tracking-wider">
                 <p>© {new Date().getFullYear()} &middot; T<span className="text-[#fe4039]">o</span>kio Ramen. All rights reserved.</p>
             </div>
 
             <div className="flex justify-center items-center">
                 <Link to="https://www.instagram.com/tokioramen/">
-                    <button className="h-[35px] inline-flex items-center mr-2 text-white hover:text-[#fe4039]">
+                    <button className="h-[35px] inline-flex items-center mr-1 md:mr-2 text-white hover:text-[#fe4039]">
                         <FiInstagram size={20} />
                     </button>
                 </Link>
                 <Link to="https://www.facebook.com/tokioramenbb">
-                    <button className="h-[35px] inline-flex items-center ml-2 text-white hover:text-[#fe4039]">
+                    <button className="h-[35px] inline-flex items-center ml-1 md:ml-2 text-white hover:text-[#fe4039]">
                     <FiFacebook size={20} />
                     </button>
                 </Link>

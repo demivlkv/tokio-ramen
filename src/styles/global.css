@@ -9,6 +9,8 @@
         @apply bg-[#fdfdfd];
         @apply font-['Jost'];
         @apply font-light;
+        @apply text-sm;
+        @apply md:text-base;
         @apply text-[#222];
         @apply leading-loose;
         @apply cursor-default;
@@ -18,7 +20,7 @@
         @apply font-medium;
         @apply uppercase;
         @apply text-sm;
-        @apply md:text-lg;
+        @apply md:text-base;
         @apply transition-all ease-in;
         @apply duration-300;
     }
