@@ -8,7 +8,7 @@ const MenuItem = ({ name, description, price, spicy, categoryList }) => (
       <h4 className="text-red-700 text-xl font-medium flex-inline items-center">
         {name} {spicy === true ? <div className="mx-2 w-[25px] h-[25px] inline-flex justify-center items-center rounded-full bg-[#fe4039] text-white"><ImFire size={16} /></div> : ""}
       </h4>
-      <p className="pt-4">{description}</p>
+      <p>{description}</p>
     </div>
     <p className="text-red-700 text-xl font-medium">{price}</p>
   </div>
