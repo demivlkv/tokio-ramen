@@ -3,12 +3,12 @@ import { ImFire } from '@react-icons/all-files/Im/ImFire';
 import useMenus from '../../hooks/useMenus';
 
 const MenuItem = ({ name, description, price, spicy, categoryList }) => (
-  <div className="w-full md:w-[40%] m-4 md:m-8 flex justify-evenly items-start self-start border-l-4 border-gray-100 pl-8 pt-4">
+  <div className="w-full md:w-[40%] m-4 md:m-8 flex justify-evenly items-start self-start border-l-4 border-gray-100 pl-8 py-4">
     <div className="w-full">
       <h4 className="text-red-700 text-xl font-medium flex-inline items-center">
         {name} {spicy === true ? <div className="mx-2 w-[25px] h-[25px] inline-flex justify-center items-center rounded-full bg-[#fe4039] text-white"><ImFire size={16} /></div> : ""}
       </h4>
-      <p className="py-4">{description}</p>
+      <p className="pt-4">{description}</p>
     </div>
     <p className="text-red-700 text-xl font-medium">{price}</p>
   </div>
