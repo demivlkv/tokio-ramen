@@ -61,12 +61,12 @@ const Menu = () => {
         <div className="h-full flex flex-col justify-center items-center">
 
           <h2>Menu</h2>
-          <p className="font-medium italic">Consumer Advisory</p>
-          <p className="text-center text-sm">
+          <p className="font-medium">Consumer Advisory</p>
+          <p className="text-center text-sm italic">
             Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness, especially if you have certain medical conditions.
           </p>
           <div className="pt-4 flex items-center text-sm">
-            <div className="mx-2 w-[23px] h-[23px] inline-flex justify-center items-center rounded-full bg-[#fe4039] text-white"><ImFire size={15} /></div> Spicy
+            <div className="mr-2 w-[23px] h-[23px] inline-flex justify-center items-center rounded-full bg-[#fe4039] text-white"><ImFire size={15} /></div> Spicy
           </div>
             {menus.map(menu => (
               <FullMenu key={menu.name} name={menu.name} sections={menu.sections} />
