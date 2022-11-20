@@ -12,7 +12,7 @@ const Footer = () => (
                 <StaticImage src="../images/footer/logo.png" alt="" className="w-[40px]" />
             </div>
 
-            <div className="text-sm md:text-base font-normal tracking-wider">
+            <div className="text-xs md:text-base font-normal tracking-wider">
                 <p>© {new Date().getFullYear()} &middot; T<span className="text-[#fe4039]">o</span>kio Ramen. All rights reserved.</p>
             </div>
 

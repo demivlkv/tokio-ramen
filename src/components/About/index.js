@@ -10,7 +10,7 @@ const About = () => (
         <h2>Our History</h2>
         <div className="max-w-screen-lg w-full grid px-4 sm:grid-cols-2 gap-8 mx-auto text-white">
           <div className="flex justify-center items-center">
-            <StaticImage src="../../images/about/our-history.png" alt="Tokio Ramen Owners" className="drop-shadow-md" />
+            <StaticImage src="../../images/about/our-history.png" alt="Tokio Ramen Owners" className="rounded drop-shadow-lg" />
           </div>
           <div>
             <p className="pb-2">

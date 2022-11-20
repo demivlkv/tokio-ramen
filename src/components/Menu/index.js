@@ -18,7 +18,7 @@ const MenuSection = ({ name, items, image, imageAlt }) => (
   <>
     <h3 className="my-8 text-center text-xl font-medium uppercase tracking-widest">{name}</h3>
     <div className="flex justify-center items-start">
-      <img src={image} alt={imageAlt} width={450} className="rounded-md drop-shadow-lg" />
+      <img src={image} alt={imageAlt} width={600} className="rounded-md drop-shadow-lg" />
     </div>
 
     <div className="max-w-screen-lg h-full mx-auto">
@@ -57,7 +57,7 @@ const Menu = () => {
 
   return (
     <section id="menu">
-      <div className="w-full h-full pt-14 md:pt-16 px-8 md:px-4">
+      <div className="w-full h-full pt-10 px-8 md:px-4">
         <div className="h-full flex flex-col justify-center items-center">
 
           <h2>Menu</h2>
