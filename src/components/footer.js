@@ -17,12 +17,12 @@ const Footer = () => (
             </div>
 
             <div className="flex justify-center items-center">
-                <Link to="https://www.instagram.com/tokioramen/">
+                <Link to="https://www.instagram.com/tokioramen/" target="_blank">
                     <button className="h-[35px] inline-flex items-center mr-1 md:mr-2 text-white hover:text-[#fe4039]">
                         <FiInstagram size={20} />
                     </button>
                 </Link>
-                <Link to="https://www.facebook.com/tokioramenbb">
+                <Link to="https://www.facebook.com/tokioramenbb" target="_blank">
                     <button className="h-[35px] inline-flex items-center ml-1 md:ml-2 text-white hover:text-[#fe4039]">
                     <FiFacebook size={20} />
                     </button>

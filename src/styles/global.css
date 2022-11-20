@@ -26,7 +26,7 @@
     }
 
     .navigation a:hover {
-        @apply text-[#fe4039];
+        @apply text-[#fbd1cf];
         @apply cursor-pointer;
     }
 
@@ -38,6 +38,21 @@
         @apply text-center;
         @apply uppercase;
         @apply tracking-widest;
+    }
+
+    h3 {
+        @apply my-8;
+        @apply text-center;
+        @apply text-xl;
+        @apply font-medium;
+        @apply uppercase;
+        @apply tracking-widest;
+    }
+
+    h4 {
+        @apply text-red-700;
+        @apply text-xl;
+        @apply font-medium;
     }
 
     button {

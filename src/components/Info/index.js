@@ -12,7 +12,7 @@ import { FiFacebook } from '@react-icons/all-files/fi/FiFacebook';
 const Info = () => (
   <section id="info">
     <div className="w-full md:h-screen">
-      <StaticImage src="../../images/info/top-border-2.png" alt="" className="w-full bg-[#222]" />
+      <StaticImage src="../../images/info/top-border-2.png" alt="" className="w-full" />
       <div className="bg-[#222] py-4 md:py-0">
 
         <h2>Information</h2>
@@ -94,12 +94,12 @@ const Info = () => (
         </div>
         
         <div className="w-full mx-auto mt-10 flex justify-center items-center">
-          <Link to="https://www.instagram.com/tokioramen/">
+          <Link to="https://www.instagram.com/tokioramen/" target="_blank">
             <button className="mx-4 w-[55px] h-[55px] inline-flex justify-center items-center rounded-full bg-[#fe4039] hover:bg-white text-white hover:text-[#fe4039]">
               <FiInstagram size={25} />
             </button>
           </Link>
-          <Link to="https://www.facebook.com/tokioramenbb">
+          <Link to="https://www.facebook.com/tokioramenbb" target="_blank">
             <button className="mx-4 w-[55px] h-[55px] inline-flex justify-center items-center rounded-full bg-[#fe4039] hover:bg-white text-white hover:text-[#fe4039]">
               <FiFacebook size={25} />
             </button>
@@ -107,7 +107,7 @@ const Info = () => (
         </div>
 
       </div>
-      <StaticImage src="../../images/info/btm-border-2.png" alt="" className="w-full bg-[#222]" />
+      <StaticImage src="../../images/info/btm-border-2.png" alt="" className="w-full" />
     </div>
   </section>
 );

@@ -1,5 +1,6 @@
 # Tokio Ramen Official Website
-![screenshot.png](/../main/src/images/readme/logo.png)
+![Tokio Ramen logo](/../main/src/images/readme/logo.png)
+This is a freelance project to give a complete makeover for the official website of [Tokio Ramen](https://www.tokio-ramen.com/) - a local ramen restaurant in Boynton Beach, Florida. For this project, I utilized [GatsbyJS](https://www.gatsbyjs.com/) to prioritize performance, and a headless CMS [Contenful](https://www.contentful.com/) for accessible data via GraphQL.
 
 <p align="center">:sparkles: <a href="#">Visit deployed application here</a> :sparkles:</p>
 

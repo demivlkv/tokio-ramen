@@ -5,7 +5,7 @@ import useMenus from '../../hooks/useMenus';
 const MenuItem = ({ name, description, price, spicy, categoryList }) => (
   <div className="w-full md:w-[40%] m-4 md:m-8 flex justify-evenly items-start self-start border-l-4 border-gray-100 pl-8 py-4">
     <div className="w-full">
-      <h4 className="text-red-700 text-xl font-medium flex-inline items-center">
+      <h4 className="flex-inline items-center">
         {name} {spicy === true ? <div className="mx-2 w-[25px] h-[25px] inline-flex justify-center items-center rounded-full bg-[#fe4039] text-white"><ImFire size={16} /></div> : ""}
       </h4>
       <p>{description}</p>
@@ -16,7 +16,7 @@ const MenuItem = ({ name, description, price, spicy, categoryList }) => (
 
 const MenuSection = ({ name, items, image, imageAlt }) => (
   <>
-    <h3 className="my-8 text-center text-xl font-medium uppercase tracking-widest">{name}</h3>
+    <h3>{name}</h3>
     <div className="flex justify-center items-start">
       <img src={image} alt={imageAlt} width={600} className="rounded-md drop-shadow-lg" />
     </div>
@@ -61,6 +61,13 @@ const Menu = () => {
         <div className="h-full flex flex-col justify-center items-center">
 
           <h2>Menu</h2>
+          <p className="font-medium italic">Consumer Advisory</p>
+          <p className="text-center text-sm">
+            Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness, especially if you have certain medical conditions.
+          </p>
+          <div className="pt-4 flex items-center text-sm">
+            <div className="mx-2 w-[23px] h-[23px] inline-flex justify-center items-center rounded-full bg-[#fe4039] text-white"><ImFire size={15} /></div> Spicy
+          </div>
             {menus.map(menu => (
               <FullMenu key={menu.name} name={menu.name} sections={menu.sections} />
             ))}
