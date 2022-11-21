@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { motion } from 'framer-motion';
-
+// import icons
 import { FiInstagram } from '@react-icons/all-files/fi/FiInstagram';
 import { FiFacebook } from '@react-icons/all-files/fi/FiFacebook';
 
