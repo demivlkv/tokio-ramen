@@ -1,11 +1,11 @@
 import * as React from 'react';
+import { motion } from 'framer-motion';
 import '../styles/global.css';
 
 // import components
 import Header from './header';
 import Hero from './Hero';
 import About from './About';
-import Break from './break';
 import Menu from './Menu';
 import Info from './Info';
 import Contact from './Contact';
@@ -17,11 +17,16 @@ const Layout = ({ pageTitle, children }) => {
       <title>Tokio Ramen | {pageTitle}</title>
       <Header />
       <Hero />
-        <main>{children}</main>
+        <motion.main
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -100 }}
+          transition={{ duration: 1, delay: 0.75 }}
+        >
+          {children}
+        </motion.main>
       <About />
-      <Break />
       <Menu />
-      <Break />
       <Info />
       <Contact />
       <Footer />

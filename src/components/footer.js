@@ -9,7 +9,7 @@ const Footer = () => (
     <footer>
         <div className="fixed z-50 bottom-0 left-0 w-full flex justify-between items-center p-3 bg-[#1b1b1b] border-t border-gray-300 text-white">
             <div>
-                <StaticImage src="../images/footer/logo.png" alt="" className="w-[40px]" />
+                <StaticImage src="../images/footer/logo.png" alt="Tokio Ramen Mini Logo" placeholder="none" className="w-[40px]" />
             </div>
 
             <div className="text-xs md:text-base font-normal tracking-wider">
@@ -28,7 +28,6 @@ const Footer = () => (
                     </button>
                 </Link>
             </div>
-
         </div>
     </footer>
 );

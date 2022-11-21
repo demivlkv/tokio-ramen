@@ -15,6 +15,7 @@ This is a freelance project to give a complete redesign for the official website
 - [Tailwind CSS](https://tailwindcss.com/)
 - HTML
 - npm packages:
+    - [Framer-Motion](https://www.framer.com/motion/)
     - [React Icons](https://react-icons.github.io/react-icons/)
     - [dotenv](https://github.com/motdotla/dotenv#readme)
 - [Getform.io](https://getform.io/)
