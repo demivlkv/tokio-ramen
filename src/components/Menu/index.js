@@ -12,8 +12,8 @@ const animateSection = {
         delay: 0.5,
         duration: 1,
         type: 'tween',
-        delayChildren: 2,
-        staggerChildren: 1
+        delayChildren: 1,
+        staggerChildren: 0.3
     }
   }
 };
@@ -33,10 +33,7 @@ const animateItem = {
 const MenuItem = ({ name, description, price, spicy, categoryList }) => (
   <motion.div
     className="w-full md:w-[40%] m-4 md:m-8 flex justify-evenly items-start self-start border-l-4 border-gray-100 pl-8 py-4"
-    key={name}
     variants={animateItem}
-    initial="hidden"
-    whileInView="animate"
     viewport={{ once: true }}
   >
     <div className="w-full">
@@ -107,11 +104,11 @@ const Menu = () => {
           Menu
         </motion.h2>
         <motion.div
-        className="h-full flex flex-col justify-center items-center"
-        initial={{ opacity: 0, y: 75 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.5 }}
-        viewport={{ once: true }}
+          className="h-full flex flex-col justify-center items-center"
+          initial={{ opacity: 0, y: 75 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          viewport={{ once: true }}
         >
           <p className="font-medium">Consumer Advisory</p>
           <p className="text-center text-sm italic">

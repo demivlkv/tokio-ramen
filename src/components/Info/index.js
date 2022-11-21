@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
+import { motion } from 'framer-motion';
 
 // import react icons
 import { FiMapPin } from '@react-icons/all-files/fi/FiMapPin';
@@ -15,21 +16,46 @@ const Info = () => (
       <StaticImage src="../../images/info/top-border.png" alt="" className="w-full" />
       <div className="bg-[#222] py-4 md:py-0">
 
-        <h2>Information</h2>
-        <div className="text-white text-center mb-8">
+        <motion.h2
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
+          Information
+        </motion.h2>
+        <motion.div
+          className="text-white text-center mb-8"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          viewport={{ once: true }}
+        >
           <p className="italic">
             Closed MONDAYS, select holidays and during planned closures.<br />
             Free covered garage parking available.
           </p>
-        </div>
+        </motion.div>
 
         <div className="max-w-screen-lg w-full grid sm:grid-cols-2 gap-4 mx-auto px-4 text-white">
 
-          <div className="flex justify-center items-center">
+          <motion.div
+            className="flex justify-center items-center"
+            initial={{ opacity: 0, y: 75 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
+          >
             <StaticImage src="../../images/info/tokio-map.png" alt="Tokio Ramen Location" className="mr-4 drop-shadow-md" />
-          </div>
+          </motion.div>
           {/* CONTACT INFO */}
-          <div className="w-full grid grid-cols-2 gap-2">
+          <motion.div
+            className="w-full grid grid-cols-2 gap-2"
+            initial={{opacity: 0, x: 75}}
+            whileInView={{opacity: 1, x: 0}}
+            transition={{ duration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
+          >
             <div className="inline-flex self-start items-center">
               <FiMapPin style={{ color: '#fe4039' }} size={20} className="mr-3" />
               <p className="font-medium uppercase">Location :</p>
@@ -90,10 +116,16 @@ const Info = () => (
             <div className="flex">
               <p>12 pm to 10 pm</p>
             </div>
-          </div>
+          </motion.div>
         </div>
         
-        <div className="w-full mx-auto mt-10 flex justify-center items-center">
+        <motion.div
+          className="w-full mx-auto mt-10 flex justify-center items-center"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
           <Link to="https://www.instagram.com/tokioramen/" target="_blank">
             <button className="mx-4 w-[55px] h-[55px] inline-flex justify-center items-center rounded-full bg-[#fe4039] hover:bg-white text-white hover:text-[#fe4039]">
               <FiInstagram size={25} />
@@ -104,7 +136,7 @@ const Info = () => (
               <FiFacebook size={25} />
             </button>
           </Link>
-        </div>
+        </motion.div>
 
       </div>
       <StaticImage src="../../images/info/btm-border.png" alt="" className="w-full" />

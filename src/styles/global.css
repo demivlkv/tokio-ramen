@@ -26,7 +26,7 @@
     }
 
     .navigation a:hover {
-        @apply text-[#fbd1cf];
+        @apply text-[#fe4039];
         @apply cursor-pointer;
     }
 
