@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "demivlkv",
   "dependencies": {
-    "@react-icons/all-files": "^4.1.0",
+    "@heroicons/react": "^2.0.13",
     "dotenv": "^16.0.3",
     "framer-motion": "^7.6.7",
     "gatsby": "^5.0.1",
@@ -18,7 +18,8 @@
     "gatsby-transformer-sharp": "^5.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "react-feather": "^2.0.10"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

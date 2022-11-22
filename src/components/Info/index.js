@@ -3,12 +3,8 @@ import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { motion } from 'framer-motion';
 
-// import react icons
-import { FiMapPin } from '@react-icons/all-files/fi/FiMapPin';
-import { FiPhone } from '@react-icons/all-files/fi/FiPhone';
-import { FiClock } from '@react-icons/all-files/fi/FiClock';
-import { FiInstagram } from '@react-icons/all-files/fi/FiInstagram';
-import { FiFacebook } from '@react-icons/all-files/fi/FiFacebook';
+// import icons
+import { MapPin, Phone, Clock, Instagram, Facebook } from 'react-feather';
 
 const Info = () => (
   <section id="info">
@@ -57,7 +53,7 @@ const Info = () => (
             viewport={{ once: true }}
           >
             <div className="inline-flex self-start items-center">
-              <FiMapPin style={{ color: '#fe4039' }} size={20} className="mr-3" />
+              <MapPin style={{ color: '#fe4039' }} size={20} className="mr-3" />
               <p className="font-medium uppercase">Location :</p>
             </div>
             <div className="inline-flex">
@@ -68,7 +64,7 @@ const Info = () => (
               </p>
             </div>
             <div className="inline-flex self-start items-center">
-              <FiPhone style={{ color: '#fe4039' }} size={20} className="mr-3" />
+              <Phone style={{ color: '#fe4039' }} size={20} className="mr-3" />
               <p className="font-medium uppercase">Phone :</p>
             </div>
             <div className="inline-flex">
@@ -76,7 +72,7 @@ const Info = () => (
             </div>
             {/* HOURS OF OPERATION */}
             <div className="inline-flex self-start items-center">
-              <FiClock style={{ color: '#fe4039' }} size={20} className="mr-3" />
+              <Clock style={{ color: '#fe4039' }} size={20} className="mr-3" />
               <p className="font-medium uppercase">Hours of Operation :</p>
             </div>
             <div></div>
@@ -128,12 +124,12 @@ const Info = () => (
         >
           <Link to="https://www.instagram.com/tokioramen/" target="_blank">
             <button className="mx-4 w-[55px] h-[55px] inline-flex justify-center items-center rounded-full bg-[#fe4039] hover:bg-white text-white hover:text-[#fe4039]">
-              <FiInstagram size={25} />
+              <Instagram size={25} />
             </button>
           </Link>
           <Link to="https://www.facebook.com/tokioramenbb" target="_blank">
             <button className="mx-4 w-[55px] h-[55px] inline-flex justify-center items-center rounded-full bg-[#fe4039] hover:bg-white text-white hover:text-[#fe4039]">
-              <FiFacebook size={25} />
+              <Facebook size={25} />
             </button>
           </Link>
         </motion.div>

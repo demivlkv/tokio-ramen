@@ -3,8 +3,7 @@ import { Link } from 'gatsby';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import { motion } from 'framer-motion';
 // import icons
-import { FiMenu } from '@react-icons/all-files/fi/FiMenu';
-import { FiX } from '@react-icons/all-files/fi/FiX';
+import { Menu, X } from 'react-feather';
 
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -39,12 +38,12 @@ const Header = () => {
             {/* HAMBURGER MENU AT 768PX & LOWER */}
             <div onClick={handleClick} className="md:hidden">
               {!nav ? (
-                <FiMenu
+                <Menu
                   size={30}
                   className="transition-all ease-in duration-300 hover:text-[#fe4039] hover:cursor-pointer"
                 />
               ) : (
-                <FiX
+                <X
                   size={30}
                   className="transition-all ease-in duration-300 hover:text-[#fe4039] hover:cursor-pointer"
                 />

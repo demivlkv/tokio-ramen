@@ -16,7 +16,7 @@ For the past two years, I have been doing freelance work for [Tokio Ramen](https
 - HTML
 - npm packages:
     - [Framer-Motion](https://www.framer.com/motion/)
-    - [React Icons](https://react-icons.github.io/react-icons/)
+    - [Feather Icons](https://feathericons.com/) & [Heroicons](https://heroicons.com/)
     - [dotenv](https://github.com/motdotla/dotenv#readme)
 - [Getform.io](https://getform.io/)
 

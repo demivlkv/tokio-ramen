@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ImFire } from '@react-icons/all-files/Im/ImFire';
+import { FireIcon } from '@heroicons/react/20/solid';
 import useMenus from '../../hooks/useMenus';
 
 const animateSection = {
@@ -37,8 +37,8 @@ const MenuItem = ({ name, description, price, spicy, categoryList }) => (
     viewport={{ once: true }}
   >
     <div className="w-full">
-      <h4 className="flex-inline items-center">
-        {name} {spicy === true ? <div className="mx-2 w-[25px] h-[25px] inline-flex justify-center items-center rounded-full bg-[#fe4039] text-white"><ImFire size={16} /></div> : ""}
+      <h4 className="flex items-center">
+        {name} {spicy === true ? <div className="mx-2 w-[25px] h-[25px] inline-flex justify-center items-center rounded-full bg-[#fe4039] text-white"><FireIcon width={20} /></div> : ""}
       </h4>
       <p>{description}</p>
     </div>
@@ -115,7 +115,7 @@ const Menu = () => {
             Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness, especially if you have certain medical conditions.
           </p>
           <div className="pt-4 flex items-center text-sm">
-            <div className="mr-2 w-[23px] h-[23px] inline-flex justify-center items-center rounded-full bg-[#fe4039] text-white"><ImFire size={15} /></div> Spicy
+            <div className="mr-2 w-[23px] h-[23px] inline-flex justify-center items-center rounded-full bg-[#fe4039] text-white"><FireIcon width={18} /></div> Spicy
           </div>
         </motion.div>
             {menus.map(menu => (
