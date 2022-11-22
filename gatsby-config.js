@@ -7,7 +7,7 @@ module.exports = {
     title: `Tokio Ramen`,
     description: `Tokio Ramen Boynton Beach, FL | Official Website`,
     author: `demivlkv`,
-    siteUrl: `https://tokioramen.gatsbyjs.io/`,
+    siteUrl: `https://tokio-ramen.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-anchor-links`,

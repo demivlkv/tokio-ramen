@@ -2,7 +2,7 @@
 ![Tokio Ramen logo](/../main/src/images/readme/logo.png)
 For the past two years, I have been doing freelance work for [Tokio Ramen](https://www.tokio-ramen.com/) - a local ramen restaurant in Boynton Beach, Florida. In continuing support of this small business, I wanted to give a complete redesign for their official website. For this project, I utilized [GatsbyJS](https://www.gatsbyjs.com/) to prioritize performance, and a headless CMS [Contenful](https://www.contentful.com/) for accessible data via GraphQL.
 
-<p align="center">:sparkles: <a href="#">Visit deployed application here</a> :sparkles:</p>
+<p align="center">:sparkles: <a href="https://tokio-ramen.netlify.app/">Visit deployed application here</a> :sparkles:</p>
 
 ![screenshot.png](/../main/src/images/readme/screenshot.png)
 
