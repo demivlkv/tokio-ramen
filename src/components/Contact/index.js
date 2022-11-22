@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { validateEmail } from '../../utils/helpers';
-import { FiChevronRight } from '@react-icons/all-files/fi/FiChevronRight';
+import { ChevronRight } from 'react-feather';
 
 const Contact = () => {
   const [formState, setFormState] = useState({
@@ -115,7 +115,7 @@ const Contact = () => {
               >
                 Submit
                 <span className="group-hover:ml-1 duration-300">
-                  <FiChevronRight className="ml-2" />
+                  <ChevronRight className="ml-2" />
                 </span>
               </button>
             </div>
