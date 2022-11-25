@@ -51,7 +51,8 @@
 
     h4 {
         @apply text-red-700;
-        @apply text-xl;
+        @apply text-lg;
+        @apply md:text-xl;
         @apply font-medium;
     }
 
