@@ -15,6 +15,7 @@ export default () => {
                             description
                             price
                             spicy
+                            popular
                             categoryList
                         }
                         image {

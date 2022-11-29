@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FireIcon } from '@heroicons/react/20/solid';
+import { FireIcon, StarIcon } from '@heroicons/react/20/solid';
 import useMenus from '../../hooks/useMenus';
 
 const animateSection = {
@@ -30,7 +30,7 @@ const animateItem = {
   }
 };
 
-const MenuItem = ({ name, description, price, spicy, categoryList }) => (
+const MenuItem = ({ name, description, price, spicy, popular }) => (
   <motion.div
     className="w-full md:w-[40%] m-4 md:m-8 flex justify-evenly items-start self-start border-l-4 border-gray-100 pl-8 py-4"
     variants={animateItem}
@@ -38,7 +38,9 @@ const MenuItem = ({ name, description, price, spicy, categoryList }) => (
   >
     <div className="w-full">
       <h4 className="flex items-center">
-        {name} {spicy === true ? <div className="mx-2 w-[25px] h-[25px] inline-flex justify-center items-center rounded-full bg-[#fe4039] text-white"><FireIcon width={20} /></div> : ""}
+        {name}
+        {popular === true ? <div className="ml-2 w-[24px] h-[24px] inline-flex justify-center items-center rounded-full bg-yellow-100 text-orange-400"><StarIcon width={20} /></div> : ""}
+        {spicy === true ? <div className="mx-2 w-[24px] h-[24px] inline-flex justify-center items-center rounded-full bg-orange-100 text-red-500"><FireIcon width={20} /></div> : ""}
       </h4>
       <p>{description}</p>
     </div>
@@ -67,7 +69,7 @@ const MenuSection = ({ name, items, image, imageAlt }) => (
             price={item.price}
             description={item.description}
             spicy={item.spicy}
-            categoryList={item.categoryList}
+            popular={item.popular}
           />
         ))}
       </div>
@@ -115,7 +117,8 @@ const Menu = () => {
             Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness, especially if you have certain medical conditions.
           </p>
           <div className="pt-4 flex items-center text-sm">
-            <div className="mr-2 w-[23px] h-[23px] inline-flex justify-center items-center rounded-full bg-[#fe4039] text-white"><FireIcon width={18} /></div> Spicy
+            <div className="mr-2 w-[23px] h-[23px] inline-flex justify-center items-center rounded-full bg-yellow-100 text-orange-400"><StarIcon width={18} /></div> Popular Item
+            <div className="ml-8 mr-2 w-[23px] h-[23px] inline-flex justify-center items-center rounded-full bg-orange-100 text-red-500"><FireIcon width={18} /></div> Spicy
           </div>
         </motion.div>
             {menus.map(menu => (
