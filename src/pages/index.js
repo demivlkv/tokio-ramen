@@ -1,8 +1,7 @@
 import * as React from 'react';
-import '../styles/global.css';
 
 // import components
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 
 const IndexPage = () => (
   <Layout pageTitle="Boynton Beach, FL">

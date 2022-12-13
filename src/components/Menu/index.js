@@ -96,7 +96,7 @@ const Menu = () => {
 
   return (
     <section id="menu">
-      <div className="w-full h-full pt-10 px-8 md:px-4">
+      <div className="w-full h-full pt-6 px-8">
         <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -106,7 +106,7 @@ const Menu = () => {
           Menu
         </motion.h2>
         <motion.div
-          className="h-full flex flex-col justify-center items-center"
+          className="flex flex-col justify-center items-center"
           initial={{ opacity: 0, y: 75 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}

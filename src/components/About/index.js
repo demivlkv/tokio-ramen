@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const About = () => (
   <section id="about">
-    <div className="w-full md:h-screen">
+    <div className="w-full h-full">
       <StaticImage src="../../images/about/top-border.png" alt="" className="w-full" />
       <div className="bg-[#222] py-4 md:py-0">
 
@@ -24,7 +24,7 @@ const About = () => (
             transition={{ duration: 1, delay: 0.5 }}
             viewport={{ once: true }}
           >
-            <StaticImage src="../../images/about/our-history.png" alt="Tokio Ramen Owners" className="rounded drop-shadow-lg" />
+            <StaticImage src="../../images/about/our-history.png" alt="The owners of Tokio Ramen" className="rounded drop-shadow-lg" />
           </motion.div>
           <motion.div
             initial={{opacity: 0, x: 100}}

@@ -1,15 +1,15 @@
 import * as React from 'react';
 import { motion } from 'framer-motion';
-import '../styles/global.css';
+import '../../styles/global.css';
 
 // import components
-import Header from './header';
-import Hero from './Hero';
-import About from './About';
-import Menu from './Menu';
-import Info from './Info';
-import Contact from './Contact';
-import Footer from './footer';
+import Header from '../Header';
+import Hero from '../Hero';
+import About from '../About';
+import Menu from '../Menu';
+import Info from '../Info';
+import Contact from '../Contact';
+import Footer from '../Footer';
 
 const Layout = ({ pageTitle, children }) => {
   return (

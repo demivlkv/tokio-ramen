@@ -16,7 +16,7 @@ const Footer = () => (
     >
       <div>
         <StaticImage
-          src="../images/footer/logo.png"
+          src="../../images/footer/logo.png"
           alt="Tokio Ramen Mini Logo"
           placeholder="none"
           className="w-[40px]"
