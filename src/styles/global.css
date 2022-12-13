@@ -6,59 +6,39 @@
 
 @layer base {
     body {
-        @apply bg-[#fdfdfd];
-        @apply font-['Jost'];
-        @apply font-light;
-        @apply text-sm;
-        @apply md:text-base;
-        @apply text-[#222];
-        @apply leading-loose;
-        @apply cursor-default;
+        @apply bg-[#fdfdfd] font-['Jost'] font-light text-sm md:text-base text-[#222] leading-loose cursor-default;
     }
 
     .navigation a {
-        @apply font-medium;
-        @apply uppercase;
-        @apply text-sm;
-        @apply md:text-base;
-        @apply transition-all ease-in;
-        @apply duration-300;
+        @apply font-medium uppercase text-sm md:text-base transition-all ease-in duration-300;
     }
 
     .navigation a:hover {
-        @apply text-[#fe4039];
-        @apply cursor-pointer;
+        @apply text-[#fe4039] cursor-pointer;
+    }
+
+    .navigation .mobile-menu {
+        @apply absolute top-[-30vh] left-0 w-full flex flex-col justify-center items-center bg-[#1b1b1b] transition-all ease-in duration-500;
+    }
+
+    .navigation .mobile-menu.active {
+        @apply top-16;
     }
 
     h2 {
-        @apply pb-8;
-        @apply font-medium;
-        @apply text-[#fe4039];
-        @apply text-2xl;
-        @apply text-center;
-        @apply uppercase;
-        @apply tracking-widest;
+        @apply pb-8 font-medium text-[#fe4039] text-2xl text-center uppercase tracking-widest;
     }
 
     h3 {
-        @apply my-8;
-        @apply text-center;
-        @apply text-xl;
-        @apply font-medium;
-        @apply uppercase;
-        @apply tracking-widest;
+        @apply my-8 text-center text-xl font-medium uppercase tracking-widest;
     }
 
     h4 {
-        @apply text-red-700;
-        @apply text-lg;
-        @apply md:text-xl;
-        @apply font-medium;
+        @apply text-red-700 text-lg md:text-xl font-medium;
     }
 
     button {
-        @apply transition-all ease-in;
-        @apply duration-300;
+        @apply transition-all ease-in duration-300;
     }
 
     button:hover {
@@ -66,9 +46,6 @@
     }
 
     .about {
-        @apply bg-cover;
-        @apply bg-top;
-        @apply bg-no-repeat;
-        @apply pt-[8rem];
+        @apply bg-cover bg-top bg-no-repeat pt-[8rem];
     }
 }

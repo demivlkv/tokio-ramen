@@ -51,8 +51,8 @@ const Header = () => {
               <div
                 className={
                   !nav
-                    ? "hidden"
-                    : "absolute top-16 left-0 w-full bg-[#1b1b1b] flex flex-col justify-center items-center"
+                    ? "mobile-menu"
+                    : "mobile-menu active"
                 }
               >
                 <AnchorLink to="#about" title="Our History" className="mt-8 mb-4" />
