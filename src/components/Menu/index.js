@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FireIcon, StarIcon } from '@heroicons/react/20/solid';
 import useMenus from '../../hooks/useMenus';
@@ -93,6 +93,12 @@ const FullMenu = ({ name, sections }) => (
 
 const Menu = () => {
   const menus = useMenus();
+  console.log(menus);
+  const [activeTab, setActiveTab] = useState(0);
+
+  const handleTabClick = (index) => {
+    setActiveTab(index);
+  };
 
   return (
     <section id="menu">
@@ -112,7 +118,7 @@ const Menu = () => {
           transition={{ duration: 1, delay: 0.5 }}
           viewport={{ once: true }}
         >
-          <p className="font-medium">Consumer Advisory</p>
+          <h5 className="font-medium">Consumer Advisory</h5>
           <p className="text-center text-sm italic">
             Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness, especially if you have certain medical conditions.
           </p>
@@ -121,10 +127,26 @@ const Menu = () => {
             <div className="ml-8 mr-2 w-[23px] h-[23px] inline-flex justify-center items-center rounded-full bg-orange-100 text-red-500"><FireIcon width={18} /></div> Spicy
           </div>
         </motion.div>
-            {menus.map(menu => (
-              <FullMenu key={menu.name} name={menu.name} sections={menu.sections} />
-            ))}
-
+        <ul className="mt-8 flex justify-center items-center">
+          {menus[0].sections.map((section, index) => (
+            <li
+              key={index}
+              className={`py-2 px-4 text-sm font-medium uppercase focus:outline-none cursor-pointer ${
+                activeTab === index ? 'border-b-2 border-red-600' : 'border-b border-[transparent] text-gray-400 hover:text-[#222] transition-all ease-in duration-300'
+              }`}
+              onClick={() => handleTabClick(index)}
+            >
+              {section.name}
+            </li>
+          ))}
+        </ul>
+        {menus[0].sections.map((section, index) => (
+          <>
+            {index === activeTab && (
+              <FullMenu key={menus[0].name} name={menus[0].name} sections={[section]} />
+            )}
+          </>
+        ))}
       </div>
     </section>
   )
