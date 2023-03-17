@@ -34,15 +34,6 @@ const Menu = () => {
           transition={{ duration: 1, delay: 0.5 }}
           viewport={{ once: true }}
         >
-          <h5 className="font-medium">Consumer Advisory</h5>
-          <p className="text-center text-sm italic">
-            Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness, especially if you have certain medical conditions.
-          </p>
-          <div className="pt-4 flex items-center text-sm">
-            <div className="mr-2 w-[23px] h-[23px] inline-flex justify-center items-center rounded-full bg-yellow-100 text-orange-400"><StarIcon width={18} /></div> Popular Item
-            <div className="ml-8 mr-2 w-[23px] h-[23px] inline-flex justify-center items-center rounded-full bg-orange-100 text-red-500"><FireIcon width={18} /></div> Spicy
-          </div>
-
           {/* DISPLAY MENU TABS */}
           <MenuTabs
             menuSections={menuSections}
@@ -56,6 +47,23 @@ const Menu = () => {
           menuSections={menuSections}
           activeTab={activeTab}
         />
+
+        <motion.div
+          className="flex flex-col justify-center items-center"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <div className="mb-4 flex items-center text-sm">
+            <div className="mr-2 w-[23px] h-[23px] inline-flex justify-center items-center rounded-full bg-yellow-100 text-orange-400"><StarIcon width={18} /></div> Popular Item
+            <div className="ml-8 mr-2 w-[23px] h-[23px] inline-flex justify-center items-center rounded-full bg-orange-100 text-red-500"><FireIcon width={18} /></div> Spicy
+          </div>
+          <h5 className="font-medium">Consumer Advisory</h5>
+          <p className="mb-8 text-center text-sm italic">
+            Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness, especially if you have certain medical conditions.
+          </p>
+        </motion.div>
 
       </div>
     </section>

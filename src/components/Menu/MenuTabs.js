@@ -2,11 +2,11 @@ import React from 'react';
 
 const MenuTabs = ({ menuSections, activeTab, handleTabClick }) => {
   return (
-    <ul className="mt-8 flex justify-center items-center">
+    <ul className="flex flex-wrap justify-center items-center flex-shrink-0">
       {menuSections.map((section, index) => (
         <li
           key={index}
-          className={`py-1 px-2 sm:py-2 sm:px-4 text-xs md:text-sm font-medium uppercase focus:outline-none cursor-pointer ${
+          className={`my-2 sm:my-0 py-2 px-4 text-sm font-medium uppercase focus:outline-none cursor-pointer ${
             activeTab === index ? 'border-b-2 border-red-600' : 'border-b border-[transparent] text-gray-400 hover:text-[#222] transition-all ease-in duration-300'
           }`}
           onClick={() => handleTabClick(index)}
