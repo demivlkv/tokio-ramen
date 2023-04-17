@@ -1,35 +1,35 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { validateEmail } from '../../utils/helpers';
+import { validateEmail, capitalizeFirstLetter } from '../../utils/helpers';
 import { ChevronRight } from 'react-feather';
 
 const Contact = () => {
   const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   });
-  const [errorMessage, setErrorMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState('');
   const { name, email, message } = formState;
   const formId = process.env.GATSBY_GETFORMIO_ID;
-  const formUrl = "https://getform.io/f/" + formId;
+  const formUrl = 'https://getform.io/f/' + formId;
 
   // handles form validation
   function handleChange(e) {
-    if (e.target.name === "email") {
+    if (e.target.name === 'email') {
       const isValid = validateEmail(e.target.value)
 
       // error message for invalid email
       if (!isValid) {
-        setErrorMessage("Your email is invalid.")
+        setErrorMessage('Your email is invalid.')
       } else {
-        setErrorMessage("")
+        setErrorMessage('')
       }
     } else {
       if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`)
+        setErrorMessage(`${capitalizeFirstLetter(e.target.name)} is required`)
       } else {
-        setErrorMessage("")
+        setErrorMessage('')
       }
     }
 

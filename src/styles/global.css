@@ -9,22 +9,6 @@
         @apply bg-[#fdfdfd] font-['Jost'] font-light text-sm md:text-base text-[#222] leading-loose cursor-default;
     }
 
-    .navigation a {
-        @apply font-medium uppercase text-sm md:text-base transition-all ease-in duration-300;
-    }
-
-    .navigation a:hover {
-        @apply text-[#fe4039] cursor-pointer;
-    }
-
-    .navigation .mobile-menu {
-        @apply absolute top-[-30vh] left-0 w-full flex flex-col justify-center items-center bg-[#1b1b1b] transition-all ease-in duration-500;
-    }
-
-    .navigation .mobile-menu.active {
-        @apply top-16;
-    }
-
     h2 {
         @apply pb-8 font-medium text-[#fe4039] text-2xl text-center uppercase tracking-widest;
     }
@@ -38,14 +22,31 @@
     }
 
     button {
-        @apply transition-all ease-in duration-300;
+        @apply cursor-pointer transition-all ease-in duration-300;
+    }
+}
+
+@layer components {
+    /* HEADER COMPONENT */
+    .navigation a {
+        @apply text-sm md:text-base hover:text-[#fe4039] font-medium uppercase cursor-pointer transition-all ease-in duration-300;
     }
 
-    button:hover {
-        @apply cursor-pointer;
+    .navigation .mobile-menu {
+        @apply absolute top-[-30vh] left-0 w-full flex flex-col justify-center items-center bg-[#1b1b1b] transition-all ease-in duration-500;
     }
 
+    .navigation .mobile-menu.active {
+        @apply top-16;
+    }
+
+    /* ABOUT COMPONENT */
     .about {
         @apply bg-cover bg-top bg-no-repeat pt-[8rem];
+    }
+
+    /* CONTACT COMPONENT */
+    .error-text {
+        @apply text-xs md:text-sm text-red-700 font-medium;
     }
 }
