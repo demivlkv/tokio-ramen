@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Tokio Ramen`,
-    description: `Tokio Ramen Boynton Beach, FL | Official Website`,
+    description: `Tokio Ramen Official Website | Boynton Beach, FL`,
     author: `demivlkv`,
     siteUrl: `https://tokio-ramen.netlify.app/`,
   },

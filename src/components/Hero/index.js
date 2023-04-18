@@ -5,7 +5,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 const Hero = () => {
   return (
-    <div className="relative flex align-center h-screen">
+    <section className="relative flex align-center h-screen">
       <div className="container">
         <div
             className="hero bg-fixed bg-cover bg-center absolute top-0 left-0 w-full h-full"
@@ -30,7 +30,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -40,11 +40,6 @@
         @apply top-16;
     }
 
-    /* ABOUT COMPONENT */
-    .about {
-        @apply bg-cover bg-top bg-no-repeat pt-[8rem];
-    }
-
     /* CONTACT COMPONENT */
     .error-text {
         @apply text-xs md:text-sm text-red-700 font-medium;
