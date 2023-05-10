@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FireIcon, StarIcon } from '@heroicons/react/20/solid';
 
 import useMenus from '../../hooks/useMenus';
 import MenuTabs from './MenuTabs';
 import FullMenu from './FullMenu';
+import Spicy from '../Icons/Spicy';
+import Star from '../Icons/Star';
 
 const Menu = () => {
   const menus = useMenus();
@@ -55,8 +56,12 @@ const Menu = () => {
           viewport={{ once: true }}
         >
           <div className="mb-4 flex items-center text-sm">
-            <div className="mr-2 w-[23px] h-[23px] inline-flex justify-center items-center rounded-full bg-yellow-100 text-orange-400"><StarIcon width={18} /></div> Popular Item
-            <div className="ml-8 mr-2 w-[23px] h-[23px] inline-flex justify-center items-center rounded-full bg-orange-100 text-red-500"><FireIcon width={18} /></div> Spicy
+            <div className="mr-2 w-[23px] h-[23px] inline-flex justify-center items-center rounded-full bg-yellow-100 text-orange-400">
+              <span className="w-[15px] h-[15px]"><Star /></span>
+            </div> Popular Item
+            <div className="ml-8 mr-2 w-[23px] h-[23px] inline-flex justify-center items-center rounded-full bg-orange-100 text-red-500">
+              <span className="w-[15px] h-[15px]"><Spicy /></span>
+            </div> Spicy
           </div>
           <h5 className="font-medium">Consumer Advisory</h5>
           <p className="mb-8 text-center text-sm italic">

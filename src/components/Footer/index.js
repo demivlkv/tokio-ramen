@@ -3,7 +3,8 @@ import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { motion } from 'framer-motion';
 // import icons
-import { Instagram, Facebook } from 'react-feather';
+import Instagram from '../Icons/Instagram';
+import Facebook from '../Icons/Facebook';
 
 const Footer = () => (
   <footer>
@@ -32,13 +33,13 @@ const Footer = () => (
 
       <div className="flex justify-center items-center">
         <Link to="https://www.instagram.com/tokioramen/" target="_blank">
-          <button className="h-[35px] inline-flex items-center mr-1 md:mr-2 text-white hover:text-[#fe4039]">
-            <Instagram size={20} />
+          <button className="h-[30px] flex items-center mr-1 md:mr-2 text-white hover:text-[#fe4039]">
+            <span className="w-[20px] h-[20px]"><Instagram /></span>
           </button>
         </Link>
         <Link to="https://www.facebook.com/tokioramenbb" target="_blank">
-          <button className="h-[35px] inline-flex items-center ml-1 md:ml-2 text-white hover:text-[#fe4039]">
-            <Facebook size={20} />
+          <button className="h-[30px] flex items-center ml-1 md:ml-2 text-white hover:text-[#fe4039]">
+            <span className="w-[19px] h-[19px]"><Facebook /></span>
           </button>
         </Link>
       </div>

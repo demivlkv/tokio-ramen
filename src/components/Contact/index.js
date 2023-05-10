@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { validateEmail, capitalizeFirstLetter } from '../../utils/helpers';
-import { ChevronRight } from 'react-feather';
+import ChevronRight from '../Icons/ChevronRight';
 
 const Contact = () => {
   const [formState, setFormState] = useState({
@@ -108,11 +108,11 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="font-medium uppercase tracking-widest group w-[150px] mx-auto flex items-center my-2 pl-8 py-2 border-2 border-[#fe4039] rounded hover:bg-[#fe3f3978]"
+                  className="font-medium uppercase tracking-widest group w-[146px] mx-auto flex items-center my-2 pl-8 py-2 border-2 border-[#fe4039] rounded hover:bg-[#fe3f3978]"
                 >
                   Submit
                   <span className="group-hover:ml-1 duration-300">
-                    <ChevronRight className="ml-2" />
+                    <ChevronRight />
                   </span>
                 </button>
               </div>

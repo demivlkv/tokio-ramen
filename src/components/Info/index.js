@@ -4,7 +4,11 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { motion } from 'framer-motion';
 
 // import icons
-import { MapPin, Phone, Clock, Instagram, Facebook } from 'react-feather';
+import MapPin from '../Icons/MapPin';
+import Phone from '../Icons/Phone';
+import Clock from '../Icons/Clock';
+import Instagram from '../Icons/Instagram';
+import Facebook from '../Icons/Facebook';
 
 const Info = () => (
   <section id="info">
@@ -38,7 +42,7 @@ const Info = () => (
             {/* CONTACT INFO */}
             <div className="w-full grid grid-cols-2 gap-2">
               <div className="flex self-start items-center">
-                <MapPin style={{ color: '#fe4039' }} size={20} className="mr-3" />
+                <span className="w-[20px] h-[20px] text-[#fe4039] mr-3"><MapPin /></span>
                 <p className="font-medium uppercase">Location :</p>
               </div>
               <div>
@@ -49,7 +53,7 @@ const Info = () => (
                 </p>
               </div>
               <div className="flex self-start items-center">
-                <Phone style={{ color: '#fe4039' }} size={20} className="mr-3" />
+                <span className="w-[18px] h-[18px] text-[#fe4039] mr-3"><Phone /></span>
                 <p className="font-medium uppercase">Phone :</p>
               </div>
               <div>
@@ -57,7 +61,7 @@ const Info = () => (
               </div>
               {/* HOURS OF OPERATION */}
               <div className="flex self-start items-center">
-                <Clock style={{ color: '#fe4039' }} size={20} className="mr-3" />
+                <span className="w-[20px] h-[20px] text-[#fe4039] mr-3"><Clock /></span>
                 <p className="font-medium uppercase">Hours of Operation :</p>
               </div>
               <div></div>
@@ -102,13 +106,13 @@ const Info = () => (
         
           <div className="w-full mx-auto mt-10 flex justify-center items-center">
             <Link to="https://www.instagram.com/tokioramen/" target="_blank">
-              <button className="mx-4 w-[55px] h-[55px] inline-flex justify-center items-center rounded-full bg-[#fe4039] hover:bg-white text-white hover:text-[#fe4039]">
-                <Instagram size={25} />
+              <button className="mx-4 w-[50px] h-[50px] inline-flex justify-center items-center rounded-full bg-[#fe4039] hover:bg-white text-white hover:text-[#fe4039]">
+                <span className="w-[30px] h-[30px]"><Instagram /></span>
               </button>
             </Link>
             <Link to="https://www.facebook.com/tokioramenbb" target="_blank">
-              <button className="mx-4 w-[55px] h-[55px] inline-flex justify-center items-center rounded-full bg-[#fe4039] hover:bg-white text-white hover:text-[#fe4039]">
-                <Facebook size={25} />
+              <button className="mx-4 w-[50px] h-[50px] inline-flex justify-center items-center rounded-full bg-[#fe4039] hover:bg-white text-white hover:text-[#fe4039]">
+              <span className="w-[30px] h-[30px]"><Facebook /></span>
               </button>
             </Link>
           </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FireIcon, StarIcon } from '@heroicons/react/20/solid';
+import Spicy from '../Icons/Spicy';
+import Star from '../Icons/Star';
 
 const animateItem = {
   hidden: { y: 50, opacity: 0 },
@@ -26,12 +27,12 @@ const MenuItem = ({ name, description, price, spicy, popular }) => {
           {name}
           {popular ? (
             <div className="ml-2 w-[24px] h-[24px] inline-flex justify-center items-center rounded-full bg-yellow-100 text-orange-400">
-              <StarIcon width={20} />
+              <span className="w-[16px] h-[16px]"><Star /></span>
             </div>
           ) : null}
           {spicy ? (
             <div className="mx-2 w-[24px] h-[24px] inline-flex justify-center items-center rounded-full bg-orange-100 text-red-500">
-              <FireIcon width={20} />
+              <span className="w-[16px] h-[16px]"><Spicy /></span>
             </div>
           ) : null}
         </h4>
