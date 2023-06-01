@@ -1,14 +1,13 @@
 # Tokio Ramen Official Website
 ![Tokio Ramen logo](/../main/src/images/readme/logo.png)
-For the past three years, I have been working closely with [Tokio Ramen](https://www.tokio-ramen.com/) - a local ramen restaurant in Boynton Beach, Florida - to create and maintain their branding. In continuing support of this small business, I wanted to give a complete redesign for their official website. For this project, I utilized [GatsbyJS](https://www.gatsbyjs.com/) to prioritize performance, and a headless CMS [Contenful](https://www.contentful.com/) for accessible data via GraphQL.
+For the past three years, I have been working closely with **Tokio Ramen** - a local ramen restaurant located in Boynton Beach, Florida - to create and maintain their official website and branding. In continuing support of this small business, I created this front-end website using [GatsbyJS](https://www.gatsbyjs.com/) to prioritize performance and [Contenful](https://www.contentful.com/) for accessible data via GraphQL.
 
 <p align="center">:sparkles: <a href="https://tokio-ramen.netlify.app/">Visit deployed application here</a> :sparkles:</p>
 
 ![screenshot.png](/../main/src/images/readme/screenshot.png)
 
 ### Built With:
-- [GatsbyJS](https://www.gatsbyjs.com/)
-- [ReactJS](https://reactjs.org/)
+- [GatsbyJS](https://www.gatsbyjs.com/) / [ReactJS](https://reactjs.org/)
 - [Contenful](https://www.contentful.com/)
 - GraphQL
 - JavaScript
@@ -16,7 +15,6 @@ For the past three years, I have been working closely with [Tokio Ramen](https:/
 - HTML
 - npm packages:
     - [Framer-Motion](https://www.framer.com/motion/)
-    - [Feather Icons](https://feathericons.com/) & [Heroicons](https://heroicons.com/)
     - [dotenv](https://github.com/motdotla/dotenv#readme)
 - [Getform.io](https://getform.io/)
 
