@@ -33,7 +33,7 @@ const Header = () => {
               <AnchorLink to="#about" title="Our History" className="mr-2 md:mr-4" />
               <AnchorLink to="#menu" title="Menu" className="mx-2 md:mx-4" />
               <AnchorLink to="#info" title="Info" className="mx-2 md:mx-4" />
-              <AnchorLink to="#contact" title="Contact" className="mx-2 md:ml-4" />
+              <AnchorLink to="#contact" title="Contact" className="mx-2 md:mx-4" />
             </div>
 
             {/* HAMBURGER MENU AT 768PX & LOWER */}
@@ -53,7 +53,7 @@ const Header = () => {
                 <AnchorLink to="#about" title="Our History" className="mt-8 mb-4" />
                 <AnchorLink to="#menu" title="Menu" className="my-4" />
                 <AnchorLink to="#info" title="Info" className="my-4" />
-                <AnchorLink to="#contact" title="Contact" className="mt-4 mb-8" />
+                <AnchorLink to="#contact" title="Contact" className="my-4" />
               </div>
             </div>
           </nav>
