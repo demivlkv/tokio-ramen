@@ -1,42 +1,42 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { validateEmail, capitalizeFirstLetter } from '../../utils/helpers';
-import ChevronRight from '../Icons/ChevronRight';
+import React, { useState } from "react"
+import { motion } from "framer-motion"
+import { validateEmail, capitalizeFirstLetter } from "../../utils/helpers"
+import ChevronRight from "../Icons/ChevronRight"
 
 const Contact = () => {
   const [formState, setFormState] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
-  const [errorMessage, setErrorMessage] = useState('');
-  const { name, email, message } = formState;
-  const formId = process.env.GATSBY_GETFORMIO_ID;
-  const formUrl = 'https://getform.io/f/' + formId;
+    name: "",
+    email: "",
+    message: "",
+  })
+  const [errorMessage, setErrorMessage] = useState("")
+  const { name, email, message } = formState
+  // const formId = process.env.GATSBY_GETFORMIO_ID
+  // const formUrl = "https://getform.io/f/" + formId
 
   // handles form validation
   function handleChange(e) {
-    if (e.target.name === 'email') {
+    if (e.target.name === "email") {
       const isValid = validateEmail(e.target.value)
 
       // error message for invalid email
       if (!isValid) {
-        setErrorMessage('Your email is invalid.')
+        setErrorMessage("Your email is invalid.")
       } else {
-        setErrorMessage('')
+        setErrorMessage("")
       }
     } else {
       if (!e.target.value.length) {
         setErrorMessage(`${capitalizeFirstLetter(e.target.name)} is required`)
       } else {
-        setErrorMessage('')
+        setErrorMessage("")
       }
     }
 
     if (!errorMessage) {
       setFormState({ ...formState, [e.target.name]: e.target.value })
     }
-  };
+  }
 
   return (
     <section id="contact">
@@ -60,14 +60,12 @@ const Contact = () => {
             <p className="mb-4 text-center">We'd love to hear from you!</p>
 
             {/* CONTACT FORM */}
-            <form
-              method="POST"
-              action={formUrl}
-              id="contact-form"
-              className="flex justify-center w-full"
-            >
+            <form id="contact-form" className="flex justify-center w-full">
               <div class="w-[75%] max-w-xl mx-auto">
-                <label htmlFor="name" className="block text-[#fe4039] uppercase font-medium">
+                <label
+                  htmlFor="name"
+                  className="block text-[#fe4039] uppercase font-medium"
+                >
                   Name:
                 </label>
                 <input
@@ -78,7 +76,10 @@ const Contact = () => {
                   className="w-full my-2 p-2 rounded bg-[#f3f3f3] border border-gray-300 font-medium focus:outline-0 focus:ring-2 focus:ring-[#222]"
                 />
 
-                <label htmlFor="email" className="block text-[#fe4039] uppercase font-medium">
+                <label
+                  htmlFor="email"
+                  className="block text-[#fe4039] uppercase font-medium"
+                >
                   E-mail:
                 </label>
                 <input
@@ -89,7 +90,10 @@ const Contact = () => {
                   className="w-full my-2 p-2 rounded bg-[#f3f3f3] border border-gray-300 font-medium focus:outline-0 focus:ring-2 focus:ring-[#222]"
                 />
 
-                <label htmlFor="message" className="block text-[#fe4039] uppercase font-medium">
+                <label
+                  htmlFor="message"
+                  className="block text-[#fe4039] uppercase font-medium"
+                >
                   Message:
                 </label>
                 <textarea
@@ -121,7 +125,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact
