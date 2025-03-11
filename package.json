@@ -7,7 +7,7 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "framer-motion": "^7.6.7",
-    "gatsby": "^5.13.6",
+    "gatsby": "^5.14.1",
     "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-image": "^3.0.0",
     "gatsby-plugin-manifest": "^5.12.3",
